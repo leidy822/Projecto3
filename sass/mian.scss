@@ -1,0 +1,69 @@
+@import "./variables.scss";
+
+* {
+    color: $font-colorp;
+}
+
+h4 {
+    font-weight: $h-font-weight;
+}
+
+.banner {
+    background-position-y: 50%;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+
+    img {
+        display: block;
+        width: 100%;
+        position: relative;
+        top: -150px;
+    }
+}
+
+.parrafos {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    text-align: justify;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 8px;
+    grid-area: parafos-header;
+    grid-template-areas:
+      "parrafo1 parrafo1 "
+      "parrafo2 parrafo3";
+  }
+  
+  .parrafos {
+    margin: 20px auto;
+    width: 90%;
+    justify-content: center;
+    word-spacing: 2px;
+    font-size: 1.5rem;
+    word-spacing: 0.6px;
+    font-family: "Redressed", cursive;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 10px;
+    grid-template-areas:
+      "parra1 parra1"
+      "parra2 parra3";
+  }
+  .parra1 {
+    color: burlywood;
+    grid-area: parra1;
+    padding: 20px;
+  }
+  .parra2 {
+    color: rgb(240, 171, 81);
+    padding: 25px;
+  }
+  .parra3 {
+    color: rgb(185, 108, 6);
+    padding: 25px;
+  }
+  
