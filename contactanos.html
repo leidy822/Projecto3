@@ -14,12 +14,13 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="sass/mian.css">
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbarcolor">
         <a class="navbar-brand" href="#">Makeup LC</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
             data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -36,10 +37,10 @@
                     <a class="nav-link" href="productos.html">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+                    <a class="nav-link" href="servicios.html">Servicios</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="contactanos.html">Contactenos</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contactanos.html">Contactenos</a>
                 </li>
             </ul>
         </div>
@@ -47,15 +48,18 @@
   </header>
   <main>
     <div class="container">
-      <h1 class="contactanos">Contactenos</h1>
-      <ul class="contact-list">
-        <li>Tel : 1800.555.5555</li>
-        <li>cell : 555.555.5555</li>
-        <li>111 market ave <br> laredo tx 77755</li>
+      <h1 class="contactenos text-center">Contactenos</h1>
+      <div class="map-container mb-3">
+        <img src="img/Contactanos-map.png" alt="mapa de contacto">
+      </div>
+      <ul class="contact-list mb-4">
+        <li><i class="fa-solid fa-phone"></i> 1800.555.5555</li>
+        <li><i class="fa-solid fa-mobile-button"></i> 555.555.5555</li>
+        <li><i class="fa-solid fa-location-dot"></i> 111 market ave, laredo tx 77755</li>
       </ul>
     </div>
   </main>
-  <footer class="bg-light px-3 py-2">
+  <footer class="bg-footercolor px-3 py-2">
     <small>&copy;Copyright Leidy Makeup 2022</small>
 </footer>
 </body>
