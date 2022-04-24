@@ -4,14 +4,22 @@
     color: $font-colorp;
 }
 
+i {
+  color: $font-colorw;
+}
+
 h4 {
     font-weight: $h-font-weight;
+}
+
+main{
+  min-height: calc(100vh - 96px);
 }
 
 .banner {
     background-position-y: 50%;
     width: 100%;
-    height: 650px;
+    max-height: 650px;
     overflow: hidden;
 
     img {
@@ -71,17 +79,11 @@ h4 {
   @include navbar-color;
 }
 
-.bg-footercolor{
-  @include footer-color;
-
-  small{
-    color: $font-colorw;
-  }
-}
-
  h1 {
   font-family: $font-type2;
   }
+
+  /* quienes somos webpage */
 
 .quienes-somos{
   p{
@@ -90,17 +92,20 @@ h4 {
   }
 
   .imagen-quienes-somos{
+    background-position-y: 50%;
     width: 100%;
-    height: 350px;
+    max-height: 650px;
     overflow: hidden;
     img {
       width: 100%;
     display: block;
     position: relative;
-    top: -255px;
+    top: 0px;
     }
   }
 }
+
+ /* productos webpage */
 
 .product-container {
   gap: 0.5rem;
@@ -113,18 +118,103 @@ h4 {
 }
 }
 
+.botones{
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+}
+
+.fa-solid {
+  color: $font-colorp;
+}
+
+ /* servicios webpage */
+
+ 
+
 .contact-list {
   list-style: none;
   margin: 0;
   padding: 0;
   font-family: $font-type2;
-}
+  
+    .fa-solid{
+      color: $font-colorp;
+    }
+  }
+
+
+ /* contactenos webpage */
 
 .map-container {
-  height: 500px;
+  max-height: 500px;
   overflow: hidden;
 }
 
 .map-container img {
   width: 100%;
+}
+
+
+.product-item{
+  margin: 0;
+  padding: 50px;
+  min-height: 450px;
+  box-sizing: border-box;
+}
+
+.form-group{
+
+  font-family: $font-type2
+ }
+
+/* footer */
+
+.bg-footercolor{
+  @include footer-color;
+  width: auto;
+
+  small{
+    color: $font-colorw;
+  }
+}
+
+.social-media {
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+
+    li {
+      display: inline-block;
+      padding: 5px;
+
+      a {
+        .fa-brands{
+        color: #fff;          
+        }
+      }
+    }
+  }
+}
+
+/* media query */
+
+@media only screen and (max-width: 768px){
+    
+.banner {
+  img {
+    top: 0;
+  }
+}
+
+  .product-item{
+    padding: 20px;
+  }
+
 }
